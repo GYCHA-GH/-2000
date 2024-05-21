@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body{
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+*,
+*::before
+*::after{
+    box-sizing: inherit;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+header{
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+.container{
+    display: flex;
+    margin: 0px auto;
+    width: 1700px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+}
+.gorod{
+    margin-left: 10px;
+    margin-top: 50px;
+    color: #20621A;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo1{
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 90px;
+    height: 90px;
+}
+.logo2{
+    margin-left: 20px;
+    margin-top: 35px;
+    width: 250px;
+    height: 50px;
+}
+.logo3{
+    margin-left: 60px;
+    margin-top: 40px;
+    width: 50px;
+    height: 50px;
+}
+.telefon{
+    margin-left: 350px;
+    margin-top: 60px;
+    color: darkgrey;
+    text-decoration: underline;
+    font-family: 1rem;
+}
+.burger{
+    width: 80px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 150px;
+    cursor: pointer;
+    transform:  scale(1);
+    transition: 0.3s;
+}
+.burger2{
+    position: absolute;
+    cursor: pointer;
+    width: 20%;
+    margin-top: -25px;
+    margin-left: 220px;
+}
+.burger:active{
+    transform:  scale(0.8);
+    transition: 0.05s;
+}
+.burger2:active{
+    transform:  scale(0.8);
+    transition: 0.05s;
+}
+.burgerMenu{
+    padding-top: 50px;
+    width: 300px;
+    height: 580px;
+    background-color: #ffffff;
+    border: solid #20621A;
+    z-index: 20;
+    right: -20%;
+    float: left;
+    position: fixed;
+    transition: 1s;
+    display:block;
+    
+}
+
+.container2{
+    display: flex;
+    margin: 0px auto;
+    width: 1700px;
+    height: 60px;
+    background-color: #20621A;
+}
+.topmenu{
+    margin-left: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+.topmenuu{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid #20621A;
+}
+nav a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s linear;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu>li{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border-bottom: 3px solid #20621A;
+}
+.topmenu>li>a{
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    color: white;
+}
+.topmenuu>li{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+}
+.topmenuu>li>a{
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    color: #20621A;
+}
+.submenu li a:hover{
+    color: #aaaaaa;
+}
+.submenuu li a:hover{
+    color: #aaaaaa;
+}
+
+.a{
+    font-weight: 500;
+    padding: 15px 15px;
+}
+.a1{
+    font-weight: 500;
+    padding: 15px 30px;
+}
+.topmenu>li:hover>a{
+    color: #b9b9b9;
+}
+.topmenu>li:hover{
+    color: #cc2e2e;
+}
+.submenu{
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    border: 3px solid #20621A;
+    border-radius: 9px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 5px #171616;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: .3s ease-in-out;
+}
+.submenuu{
+    position: absolute;
+    z-index: 100;
+    width: 180px;
+    border: 3px solid #20621A;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 5px #171616;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s ease-in-out;
+    margin-left: 110px;
+}
+.submenu li{
+    position: relative;
+}
+.submenu a{
+    background: #ffffff;                          
+    color: #20621A;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-bottom: 3px solid #20621A;
+}
+
+.submenu .submenu{
+    position: absolute;
+    top: 0;
+}
+nav li:hover>.submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.container3{
+    display: flex;
+    margin: 0px auto;
+    width: 1700px;
+    height: 700px;
+    
+}
+.karta{
+    margin-top: 50px;
+    margin-left: 230px;
+}
+.spisoc{
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 400px;
+    height: 650px;
+    border: 6px solid #20621A;
+}
+.spisoA{
+    list-style: none;
+}
+.li{
+    position: relative;
+    border-bottom: 3px solid #20621A;
+}
+.li1{
+    position: relative;
+}
+.spisoA a{                            
+    color: #20621A;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center
+    
+}
+.containerSlider{
+    margin:100px auto 20px;
+    display: flex;
+    width: 1600px;
+    padding: 30px;
+}
+.slider-prev{
+    margin-top: 300px;
+    background: none;
+    background-image: url(img/стрелка\ лев.png);
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    background-size: cover;
+    color: #202020;
+    border: none;
+    transition: 0.3s;
+}
+.slider-prev:hover{
+    transform:  scale(0.8);
+    transition: 0.3s;
+}
+
+.slider-next{
+    margin-top: 300px;
+    background: none;
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+    background-image: url(img/стрелка\ пра.png);
+    background-size: cover;
+    border: none;
+    transition: 0.3s;
+}
+.slider-next:hover{
+    transform:  scale(0.8);
+    transition: 0.3s;
+}
+.slider {
+    display: flex;
+    width: 1600px;
+    height: 700px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.slider-line {
+    width: 1600px;
+    height: 700px;
+    display: flex;
+    background: orange;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+} 
+.slider-line img{
+    width: 1600px;
+    height: 700px;
+}
+.container4{
+    display: flex;
+    margin: 0px auto;
+    width: 1400px;
+    height: 1000px;
+    padding: 40px 120px 1px 120px;
+}
+.container4 h1{
+    font-size: 4rem;
+    color: #20621A;
+    position: absolute;
+}
+.box{
+    padding: 30px;
+    float: left;
+    margin-top: 150px;
+    width: 400px;
+    height: 600px;
+    
+    border-radius: 25px;
+    border: 6px solid #20621A;
+    
+}
+.box h2{
+    font-size: 3rem;
+    color: #20621A;
+}
+.box p{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.box img{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.box2{
+    padding: 30px;
+    float: right;
+    margin-top: 150px;
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    border: 6px solid #20621A;
+    margin-left: 90px;
+}
+.box2 h2{
+    font-size: 3rem;
+    color: #20621A;
+}
+.box2 p{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.box2 img{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.box3{
+    padding: 30px;
+    float: right;
+    margin-top: 150px;
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    border: 6px solid #20621A;
+    margin-left: 90px;
+}
+.box3 h2{
+    font-size: 3rem;
+    color: #20621A;
+}
+.box3 p{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.box3 img{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.container5{
+    display: flex;
+    margin: 0px auto;
+    width: 1700px;
+    height: 152px;
+    background-color: #20621A;
+}
+.container5 p{
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-left: 140px;
+    margin-top: 35px;
+}
+.container5 input{
+    width: 400px;
+    height: 50px;
+    border-radius: 35px;
+    border: 3px solid #ffff;
+    background-color: #20621A;
+    color: #ffff;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding-left: 30px;
+}
+.container5 a{
+    margin-top: 100px;
+    margin-left: -310px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    transform:  scale(1);
+    transition: 0.3s;
+
+}
+.container5 a:hover{
+    transform:  scale(0.9);
+    transition: 0.3s;
+}
+.img{
+    margin-top: 50px;
+    margin-left: 630px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transform:  scale(1);
+    transition: 0.3s;
+}
+.img2{
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transform:  scale(1);
+    transition: 0.3s;
+}
+.img:hover{
+    transform:  scale(0.9);
+    transition: 0.3s;
+}
+.img2:hover{
+    transform:  scale(0.9);
+    transition: 0.3s;
+}
+.footer{
+    display: flex;
+    margin: 0px auto;
+    width: 1400px;
+    height: 100px;
+}
+.footer p{
+    margin-top: 20px;
+    color: #b9b9b9;
+}
+
